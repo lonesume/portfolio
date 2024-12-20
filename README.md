@@ -11,12 +11,13 @@ This repository was created to maintain the source code of a developer portfolio
 - [World's shortest figma course (6mins)](https://www.youtube.com/watch?v=1pW_sk-2y40)
 
 ### Stock images/videos
-- [Pexels (Free hi-res stock images and videos)](https://dribbble.com/)
+- [Pexels (Free hi-res stock images and videos)](https://www.pexels.com/)
 - [Unsplash (Free hi-res stock images)](https://unsplash.com/)
 
 ### Design Examples & Inspiration
 - [Dribbble](https://dribbble.com/)
 - [Behance](https://www.behance.net/)
+- [Stack Sorted](https://stacksorted.com/)
 
 ### Design Tools
 - [Realtime Colors for testing themes and fonts](https://www.realtimecolors.com/)
@@ -89,3 +90,17 @@ flowchart LR
 ```
 
 ## Wireframing
+- [Link to the PDF](assets/wireframe/brian-joseph-portfolio-wireframe.pdf)
+
+- [Link to the Balsamiq Project](assets/wireframe/brian-joseph-portfolio-wireframe.bmpr)
+
+### Home Page
+![home](assets/wireframe/pngs/home.png)
+### About
+![home](assets/wireframe/pngs/about.png)
+### Projects
+![home](assets/wireframe/pngs/project.png)
+### Project Detail
+![home](assets/wireframe/pngs/project-detail.png)
+### Resume
+![home](assets/wireframe/pngs/resume.png)
