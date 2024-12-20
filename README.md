@@ -56,9 +56,9 @@ We've gathered some observations from the reference/source material
   
 
 ### Colors
-- Background: black rgb(41, 42, 44)
-- Text: white rgb(250, 250, 250)
-- Text:hover rgb(255, 11, 0)
+- Background: black rgb(41, 42, 44) ⬛
+- Text: white rgb(250, 250, 250) ⬜
+- Text:hover rgb(255, 11, 0) 🟨
 
 ### Illustrations
 
