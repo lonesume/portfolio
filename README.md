@@ -1,29 +1,123 @@
-# Create T3 App
+<!-- Markdown cheat sheet for reference:
+https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet -->
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+# Brian Joseph's Portfolio
+This repository was created to maintain the source code of a developer portfolio that is well-designed and functional. In other words, a portfolio that was made to work good and also look good. This site was created using the [T3 Stack](https://create.t3.gg/), drew on inspiration from [Erik Jonsson's portfolio](https://erikjonsson.se/), and is currently deployed to Vercel.
 
-## What's next? How do I make an app with this?
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Design References
+### UI/UX Design Fundamentals
+- [World's shortest UI/UX design course (6mins)](https://www.youtube.com/watch?v=wIuVvCuiJhU)
+- [World's shortest figma course (6mins)](https://www.youtube.com/watch?v=1pW_sk-2y40)
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+### Stock images/videos
+- [Pexels (Free hi-res stock images and videos)](https://www.pexels.com/)
+- [Unsplash (Free hi-res stock images)](https://unsplash.com/)
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+### Design Examples & Inspiration
+- [Dribbble](https://dribbble.com/)
+- [Behance](https://www.behance.net/)
+- [Stack Sorted](https://stacksorted.com/)
 
-## Learn More
+### Design Tools
+- [Realtime Colors for testing themes and fonts](https://www.realtimecolors.com/)
+- [Typescale for finding good ratios for fonts](https://typescale.com/)
+  
+  
+## Functional Requirements
+We need easy access to the following sections
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+1. Contact
+   - linkedIn
+   - github
+   - email
+2. About/Bio
+3. Skills
+4. Projects
+5. Resume
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Design Research 
+We've gathered some observations from the reference/source material
 
-## How do I deploy this?
+### Fonts: Sans-serif for everything
+  - BasisGrotesque-Regular for main text (nav, hero text)
+    - backups: sans-serif
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+  - Helvetica Medium for subheadings
+    - backups: Helvetica, Arial, sans-serif
+
+### Font Styling
+- Main heading
+  - 42px
+  - 400 weight 
+  - 40px line height
+  
+- Secondary heading
+  - 18px
+  - 700 weight
+  - 24px line height
+
+- Text
+  - 13px
+  - 400 weight
+  - 19px line height
+  - Note: This is probably too small
+  
+
+### Colors
+- Background: black rgb(41, 42, 44) ⬛
+- Text: white rgb(250, 250, 250) ⬜
+- Text:hover rgb(255, 11, 0) 🟨
+
+On the navbar, the selected page is also in the yellow
+![](assets/images/erik-jonssson-navbar-active-page.png)
+
+In the information page, the email is bright and center in yellow, and the newspaper style text in white:
+![](assets/images/erik-jonssson-infomation-page-email.png)
+
+
+### Illustrations
+
+1. Navbar seems to descend into view on load:
+![navbar](assets/images/erik-jonsson-navbar-animation.gif)
+
+1. Main text appears one line at a time:
+![Main text](assets/images/erik-jonsson-main-animation.gif)
+
+
+
+## User flow
+
+```mermaid
+---
+title: User's journey though the page
+---
+flowchart LR
+1[Homepage]
+2[About]
+3[Projects]
+4[Resume]
+5[Contact]
+
+1 --> 2
+2 --> 3
+3 --> 4
+4 --> 5
+```
+
+## Wireframing
+- [Link to the PDF](assets/wireframe/brian-joseph-portfolio-wireframe.pdf)
+
+- [Link to the Balsamiq Project](assets/wireframe/brian-joseph-portfolio-wireframe.bmpr)
+
+### Home Page
+![home](assets/wireframe/pngs/home.png)
+### About
+![home](assets/wireframe/pngs/about.png)
+### Projects
+![home](assets/wireframe/pngs/project.png)
+### Project Detail
+![home](assets/wireframe/pngs/project-detail.png)
+### Resume
+![home](assets/wireframe/pngs/resume.png)
