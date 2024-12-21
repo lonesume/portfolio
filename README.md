@@ -48,17 +48,34 @@ We've gathered some observations from the reference/source material
     - backups: Helvetica, Arial, sans-serif
 
 ### Font Styling
-- Main
+- Main heading
   - 42px
   - 400 weight 
   - 40px line height
-- Secondary
+  
+- Secondary heading
+  - 18px
+  - 700 weight
+  - 24px line height
+
+- Text
+  - 13px
+  - 400 weight
+  - 19px line height
+  - Note: This is probably too small
   
 
 ### Colors
 - Background: black rgb(41, 42, 44) ⬛
 - Text: white rgb(250, 250, 250) ⬜
 - Text:hover rgb(255, 11, 0) 🟨
+
+On the navbar, the selected page is also in the yellow
+![](assets/images/erik-jonssson-navbar-active-page.png)
+
+In the information page, the email is bright and center in yellow, and the newspaper style text in white:
+![](assets/images/erik-jonssson-infomation-page-email.png)
+
 
 ### Illustrations
 
