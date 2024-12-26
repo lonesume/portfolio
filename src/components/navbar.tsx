@@ -13,8 +13,15 @@ export default function Navbar() {
   const router = useRouter();
 
   const highlightLinkBasedOnPage = useCallback(
-    (linkPath: string) =>
-      linkPath === router.pathname ? "text-yellow-300" : "",
+    (linkPath: string) => {
+      if (router.pathname === "/" && linkPath === Page.Home) {
+        return "text-yellow-300";
+      } else {
+        return router.pathname.includes(linkPath) && linkPath !== Page.Home
+          ? "text-yellow-300"
+          : "";
+      }
+    },
     [router.pathname],
   );
 
