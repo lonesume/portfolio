@@ -17,8 +17,8 @@ const ProjectPage = () => {
   }
 
   const project = useMemo(
-    () => details.filter((detail) => detail.id === id)[0]!,
-    [details],
+    () => details.find((detail) => detail.id === id)!,
+    [details, id],
   );
 
   const renderProject = (): JSX.Element => {
