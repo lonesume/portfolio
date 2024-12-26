@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 enum Page {
   Home = "/",
@@ -50,6 +51,8 @@ export default function Navbar() {
         <a className="hover:text-yellow-300" href="mailto:brian@brianjoseph.me">
           Contact
         </a>
+        <FaGithub />
+        <FaLinkedin />
       </div>
     </>
   );
