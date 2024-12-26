@@ -14,10 +14,11 @@ export default function Navbar() {
 
   const highlightLinkBasedOnPage = useCallback(
     (linkPath: string) => {
-      if (router.pathname === "/" && linkPath === Page.Home) {
+      if (router.pathname === String(linkPath) && linkPath === Page.Home) {
         return "text-yellow-300";
       } else {
-        return router.pathname.includes(linkPath) && linkPath !== Page.Home
+        return router.pathname.includes(String(linkPath)) &&
+          linkPath !== Page.Home
           ? "text-yellow-300"
           : "";
       }

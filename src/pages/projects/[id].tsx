@@ -11,21 +11,21 @@ const ProjectPage = () => {
   const router = useRouter();
   const { id } = router.query; // Get `id` from the URL
 
+  const project = useMemo(() => {
+    if (!id) return null; // Return `null` if `id` is not available
+    return details.find((detail) => detail.id === id);
+  }, [id]);
+
   // Avoid rendering until `id` is available
   if (!id) {
     return <p>Loading...</p>; // Return a loading state or skeleton screen
   }
 
-  const project = useMemo(
-    () => details.find((detail) => detail.id === id)!,
-    [details, id],
-  );
-
   const renderProject = (): JSX.Element => {
     return (
       <Image
-        src={project.imageUrl}
-        alt={project.projectName}
+        src={project?.imageUrl || ""}
+        alt={project?.projectName || ""}
         objectFit="cover"
         width={1024} // Use numbers for width and height
         height={1024}
@@ -44,10 +44,10 @@ const ProjectPage = () => {
               <span>Go back to projects</span>
             </Link>
 
-            <h1 className="text-4xl">Project: {project.projectName}</h1>
-            <p className="pr-10 text-xl">{project.description}</p>
+            <h1 className="text-4xl">Project: {project?.projectName}</h1>
+            <p className="pr-10 text-xl">{project?.description}</p>
 
-            <a target="_blank" className="underline" href={project.githubUrl}>
+            <a target="_blank" className="underline" href={project?.githubUrl}>
               See the code!
             </a>
           </div>
