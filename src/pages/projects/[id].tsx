@@ -4,6 +4,8 @@ import Navbar from "~/components/navbar";
 import { details } from "~/utils/projects";
 import Image from "next/image";
 import { useMemo } from "react";
+import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -36,9 +38,18 @@ const ProjectPage = () => {
       <Navbar />
       <BodyContainer>
         <div className="flex flex-row">
-          <div className="w-2/3">
+          <div className="w-2/3 space-y-10">
+            <Link href="/projects" className="flex items-center space-x-2">
+              <FaArrowLeft />
+              <span>Go back to projects</span>
+            </Link>
+
             <h1 className="text-4xl">Project: {project.projectName}</h1>
-            <p>This is the project details page for {project.projectName}.</p>
+            <p className="pr-10 text-xl">{project.description}</p>
+
+            <a target="_blank" className="underline" href={project.githubUrl}>
+              See the code!
+            </a>
           </div>
           <div className="w-1/3">{renderProject()}</div>
         </div>
