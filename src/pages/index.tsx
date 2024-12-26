@@ -18,9 +18,11 @@ export default function Home() {
       <main>
         <Navbar />
         <BodyContainer>
-          <p className="animate-fadeIn1">Full Stack Software Developer</p>
-          <p className="animate-fadeIn2">Student @ Valencia College</p>
-          <p className="animate-fadeIn3">Burrito Lover</p>
+          <p className="animate-fadeIn1 text-4xl">
+            Full Stack Software Developer
+          </p>
+          <p className="animate-fadeIn2 text-4xl">Student @ Valencia College</p>
+          <p className="animate-fadeIn3 text-4xl">Burrito Lover</p>
         </BodyContainer>
       </main>
     </>
