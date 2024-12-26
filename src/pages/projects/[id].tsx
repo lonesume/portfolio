@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import BodyContainer from "~/components/body-container";
+import Navbar from "~/components/navbar";
 // import { useEffect, useState } from "react";
 
 const ProjectPage = () => {
@@ -12,10 +14,15 @@ const ProjectPage = () => {
 
   // Render the actual content
   return (
-    <div>
-      <h1>Project: {id}</h1>
-      <p>This is the project details page for {id}.</p>
-    </div>
+    <>
+      <Navbar />
+      <BodyContainer>
+        <div>
+          <h1>Project: {id}</h1>
+          <p>This is the project details page for {id}.</p>
+        </div>
+      </BodyContainer>
+    </>
   );
 };
 
