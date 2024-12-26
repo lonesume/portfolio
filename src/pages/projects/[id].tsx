@@ -24,8 +24,8 @@ const ProjectPage = () => {
   const renderProject = (): JSX.Element => {
     return (
       <Image
-        src={project?.imageUrl || ""}
-        alt={project?.projectName || ""}
+        src={project?.imageUrl ?? ""}
+        alt={project?.projectName ?? ""}
         objectFit="cover"
         width={1024} // Use numbers for width and height
         height={1024}
