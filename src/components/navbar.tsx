@@ -14,14 +14,14 @@ export default function Navbar() {
 
   const highlightLinkBasedOnPage = useCallback(
     (linkPath: string) => {
-      if (router.pathname === String(linkPath) && linkPath === Page.Home) {
+      // Ensure both are strings and handle edge cases
+      if (router.pathname === linkPath) {
         return "text-yellow-300";
-      } else {
-        return router.pathname.includes(String(linkPath)) &&
-          linkPath !== Page.Home
-          ? "text-yellow-300"
-          : "";
       }
+      if (linkPath !== Page.Home && router.pathname.startsWith(linkPath)) {
+        return "text-yellow-300";
+      }
+      return "";
     },
     [router.pathname],
   );
