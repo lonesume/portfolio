@@ -51,8 +51,12 @@ export default function Navbar() {
         Contact
       </a>
       <div className="flex space-x-4">
-        <FaGithub className="cursor-pointer hover:text-yellow-300" />
-        <FaLinkedin className="cursor-pointer hover:text-yellow-300" />
+        <a href="https://github.com/lonesume" target="_blank">
+          <FaGithub className="cursor-pointer hover:text-yellow-300" />
+        </a>
+        <a href="https://www.linkedin.com/in/brianjoseph1758/" target="_blank">
+          <FaLinkedin className="cursor-pointer hover:text-yellow-300" />
+        </a>
       </div>
     </div>
   );
