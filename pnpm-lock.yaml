@@ -44,6 +44,9 @@ dependencies:
   swiper:
     specifier: ^11.1.15
     version: 11.1.15
+  use-scramble:
+    specifier: ^2.2.15
+    version: 2.2.15(react-dom@18.3.1)(react@18.3.1)
   zod:
     specifier: ^3.23.3
     version: 3.24.1
@@ -3361,6 +3364,17 @@ packages:
     dependencies:
       punycode: 2.3.1
     dev: true
+
+  /use-scramble@2.2.15(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-3+ngTV6OpkY9JT75FM4JYcspmpP7cd/h0/5KqsMU2jcdBD+SAuBMmLqLu0N3/7t8NsfdwJjD3BBeKtT+qZWKew==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}

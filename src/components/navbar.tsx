@@ -15,7 +15,7 @@ export default function Navbar() {
   const highlightLinkBasedOnPage = useCallback(
     (linkPath: string) =>
       linkPath === router.pathname ? "text-yellow-300" : "",
-    [],
+    [router.pathname],
   );
 
   return (
@@ -47,7 +47,11 @@ export default function Navbar() {
       >
         Resume
       </a>
-      <a className="hover:text-yellow-300" href="mailto:brian@brianjoseph.me">
+      <a
+        className="hover:text-yellow-300"
+        href="mailto:brian@brianjoseph.me"
+        target="_blank"
+      >
         Contact
       </a>
       <div className="flex space-x-4">
