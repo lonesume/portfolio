@@ -6,7 +6,7 @@ import "swiper/css/navigation"; // Import Swiper's navigation CSS
 import { Navigation } from "swiper/modules"; // Correct import path for Navigation module
 import Image from "next/image";
 import Link from "next/link";
-import { details } from "./utils";
+import { details } from "../../utils/projects";
 
 const renderProjects = () => {
   return details.map((detail) => {
