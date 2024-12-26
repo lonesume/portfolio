@@ -19,41 +19,41 @@ export default function Navbar() {
   );
 
   return (
-    <>
-      <div className="mx-10 my-5 space-x-10">
-        <Link
-          className={`hover:text-yellow-300 ${highlightLinkBasedOnPage(Page.Home)}`}
-          href={Page.Home}
-        >
-          Brian Joseph
-        </Link>
-        <Link
-          className={`hover:text-yellow-300 ${highlightLinkBasedOnPage(Page.About)}`}
-          href={Page.About}
-        >
-          About
-        </Link>
-        <Link
-          className={`hover:text-yellow-300 ${highlightLinkBasedOnPage(Page.Projects)}`}
-          href={Page.Projects}
-        >
-          Projects
-        </Link>
-        <a
-          className="hover:text-yellow-300"
-          href={
-            "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/lonesume/brian_joseph_resume/main/brian_joseph_resume.pdf"
-          }
-          target="_blank"
-        >
-          Resume
-        </a>
-        <a className="hover:text-yellow-300" href="mailto:brian@brianjoseph.me">
-          Contact
-        </a>
-        <FaGithub />
-        <FaLinkedin />
+    <div className="mx-10 my-5 flex items-center space-x-10">
+      <Link
+        className={`hover:text-yellow-300 ${highlightLinkBasedOnPage(Page.Home)}`}
+        href={Page.Home}
+      >
+        Brian Joseph
+      </Link>
+      <Link
+        className={`hover:text-yellow-300 ${highlightLinkBasedOnPage(Page.About)}`}
+        href={Page.About}
+      >
+        About
+      </Link>
+      <Link
+        className={`hover:text-yellow-300 ${highlightLinkBasedOnPage(Page.Projects)}`}
+        href={Page.Projects}
+      >
+        Projects
+      </Link>
+      <a
+        className="hover:text-yellow-300"
+        href={
+          "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/lonesume/brian_joseph_resume/main/brian_joseph_resume.pdf"
+        }
+        target="_blank"
+      >
+        Resume
+      </a>
+      <a className="hover:text-yellow-300" href="mailto:brian@brianjoseph.me">
+        Contact
+      </a>
+      <div className="flex space-x-4">
+        <FaGithub className="cursor-pointer hover:text-yellow-300" />
+        <FaLinkedin className="cursor-pointer hover:text-yellow-300" />
       </div>
-    </>
+    </div>
   );
 }
