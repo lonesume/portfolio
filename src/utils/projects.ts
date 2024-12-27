@@ -54,4 +54,16 @@ export const details: ProjectDetail[] = [
       "Utilizing OpenCV for motion detection and Smtplib for email alerts, the app enhances " +
       "security by providing instant updates to users.",
   },
+  {
+    projectName: "Pursuit of Happyness",
+    id: "happyness-data-visualizer",
+    imageUrl: "/images/projects/happyness-data-visualizer.png",
+    githubUrl: "https://github.com/lonesume/Happiness-api",
+    description:
+      "An interactive visualization of global happiness, " +
+      "based on Generosity, GDP, Corruption, and Happiness levels across countries. " +
+      "Using Streamlit for the web interface, Plotly for dynamic visualizations, " +
+      "and Python for data processing, the app provides a clear, " +
+      "accessible representation of global well-being trends.",
+  },
 ];
