@@ -32,14 +32,17 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm md:mr-40 md:w-1/3">
-              <Image
-                src={homeImage}
-                alt={"Home image"}
-                objectFit="cover"
-                width={512}
-                height={512}
-                className="w-full"
-              />
+              <div className="overflow-hidden rounded-2xl shadow-2xl transition-transform duration-300 hover:scale-105">
+                <Image
+                  src={homeImage}
+                  alt={"Home image"}
+                  objectFit="cover"
+                  width={512}
+                  height={512}
+                  className="w-full transform transition-transform duration-300 hover:scale-110"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </BodyContainer>
