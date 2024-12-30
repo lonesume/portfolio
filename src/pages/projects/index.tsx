@@ -32,11 +32,21 @@ export default function Projects() {
       <Navbar />
       <BodyContainer>
         <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          loop={true} // Enable looping
-          navigation={true} // Enable navigation arrows
-          modules={[Navigation]} // Register Navigation module
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          loop={true}
+          navigation={true}
+          modules={[Navigation]}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >

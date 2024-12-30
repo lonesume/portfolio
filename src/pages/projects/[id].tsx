@@ -37,21 +37,25 @@ const ProjectPage = () => {
     <>
       <Navbar />
       <BodyContainer>
-        <div className="flex flex-row">
-          <div className="w-2/3 space-y-10">
+        <div className="flex flex-col px-4 md:flex-row">
+          <div className="w-full space-y-6 md:w-2/3 md:space-y-10">
             <Link href="/projects" className="flex items-center space-x-2">
               <FaArrowLeft />
               <span>Go back to projects</span>
             </Link>
 
-            <h1 className="text-4xl">Project: {project?.projectName}</h1>
-            <p className="pr-10 text-xl">{project?.description}</p>
+            <h1 className="text-3xl md:text-4xl">
+              Project: {project?.projectName}
+            </h1>
+            <p className="text-lg md:pr-10 md:text-xl">
+              {project?.description}
+            </p>
 
             <a target="_blank" className="underline" href={project?.githubUrl}>
               See the code!
             </a>
           </div>
-          <div className="w-1/3">{renderProject()}</div>
+          <div className="mt-8 w-full md:mt-0 md:w-1/3">{renderProject()}</div>
         </div>
       </BodyContainer>
     </>

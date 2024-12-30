@@ -19,23 +19,26 @@ export default function Home() {
       <main>
         <Navbar />
         <BodyContainer>
-          <div className="flex flex-row px-40">
-            <div className="w-2/3 space-y-1">
-              <p className="animate-fadeIn1 text-4xl">
+          <div className="flex flex-col px-4 md:flex-row md:px-40">
+            <div className="w-full space-y-1 pb-8 md:w-2/3 md:pb-0">
+              <p className="animate-fadeIn1 text-2xl md:text-4xl">
                 Full Stack Software Developer
               </p>
-              <p className="animate-fadeIn2 text-4xl">
+              <p className="animate-fadeIn2 text-2xl md:text-4xl">
                 Student @ Valencia College
               </p>
-              <p className="animate-fadeIn3 text-4xl">Burrito Lover</p>
+              <p className="animate-fadeIn3 text-2xl md:text-4xl">
+                Burrito Lover
+              </p>
             </div>
-            <div className="mr-40 w-1/3">
+            <div className="mx-auto w-full max-w-sm md:mr-40 md:w-1/3">
               <Image
                 src={homeImage}
                 alt={"Home image"}
                 objectFit="cover"
-                width={512} // Use numbers for width and height
+                width={512}
                 height={512}
+                className="w-full"
               />
             </div>
           </div>
