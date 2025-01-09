@@ -20,8 +20,11 @@ export default function About() {
     <>
       <Navbar />
       <BodyContainer>
-        <p className="py-24 text-center text-3xl text-yellow-300" ref={ref}></p>
-        <div className="columns-3 px-52">
+        <p
+          className="py-12 text-center text-2xl text-yellow-300 md:py-24 md:text-3xl"
+          ref={ref}
+        ></p>
+        <div className="space-y-6 px-4 md:columns-3 md:space-y-0 md:px-52">
           <p className="break-inside-avoid">
             Hi, I&apos;m Brian! I am a student at Valencia College.
             <br /> <br />
