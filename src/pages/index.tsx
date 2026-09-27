@@ -4,8 +4,7 @@ import Navbar from "~/components/navbar";
 import Image from "next/image";
 // import { api } from "~/utils/api";
 
-import homeImage from "../../public/images/home-page-img.png";
-
+import homeImage from "../../public/images/headshot_blackground.jpeg";
 export default function Home() {
   // const hello = api.post.hello.useQuery({ text: "from tRPC" });
 
@@ -24,11 +23,11 @@ export default function Home() {
               <p className="animate-fadeIn1 text-2xl md:text-4xl">
                 Full Stack Software Developer
               </p>
-              <p className="animate-fadeIn2 text-2xl md:text-4xl">
-                Student @ Valencia College
+              <p className="animate-fadeIn2 text-4xl">
+                Computer Science @ Florida A&M University
               </p>
-              <p className="animate-fadeIn3 text-2xl md:text-4xl">
-                Burrito Lover
+              <p className="animate-fadeIn3 text-4xl">
+                Building at the intersection of software + AI
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm md:mr-40 md:w-1/3">

@@ -13,22 +13,20 @@ export const details: ProjectDetail[] = [
     imageUrl: "/images/projects/pocket-gpt.png",
     githubUrl: "https://github.com/lonesume/pocket-gpt",
     description:
-      "🚀 A powerful desktop application for macOS, Windows," +
-      "and Linux that brings ChatGPT directly to your computer. " +
-      "Built with Golang, React, TypeScript, " +
-      "and the OpenAI API for fast and seamless AI-powered searches at your fingertips.",
+      "Cross-platform desktop AI assistant built with Go, React, and TypeScript," +
+      "integrated the OpenAI API to provide conversational AI directly from a" +
+      "lightweight desktop interface across macOS, Windows, and Linux.",
   },
   {
-    projectName: "Forecast Frenzy",
-    id: "weather-app",
-    imageUrl: "/images/projects/weather_app_logo.png",
-    githubUrl: "https://github.com/lonesume/weather_api_app",
+    projectName: "SEC Ranking engine",
+    id: "sec-engine",
+    imageUrl: "/images/projects/sec-rankings-logo.png",
+    githubUrl:
+      "https://github.com/lonesume/valencia_py_course/blob/main/SEC_bcs.py",
     description:
-      "A Python-powered weather app that turns the chaos of the skies into clarity on your screen. " +
-      "Get hyper-local forecasts, real-time updates, and weather insights wrapped in a " +
-      "clean, intuitive interface—whether you're chasing storms or planning picnics, " +
-      "this app keeps you a step ahead of the elements. Built for those who love tech as much " +
-      "as they love talking about the weather.",
+      "A Python-based college football ranking system that evaluates SEC teams using a custom weighted algorithm based on win percentage, strength of schedule, FPI, and average win probability." +
+      "The program uses nested dictionaries to organize team data, functions to calculate scores, and sorting to generate conference rankings." +
+      "An interactive lookup feature also allows users to view team statistics, performance ratings, and schedule difficulty.",
   },
   {
     projectName: "Bridge",
